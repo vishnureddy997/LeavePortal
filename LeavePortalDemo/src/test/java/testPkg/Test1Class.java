@@ -22,11 +22,7 @@ public class Test1Class
 
 	public void LaunchBrowser() {
 System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
-ChromeOptions options = new ChromeOptions();
-options.addArguments("headless");
-
-		//driver = new FirefoxDriver();
- driver = new ChromeDriver(options);
+WebDriver driver = new ChromeDriver();
 driver.get("http://192.168.137.2:7895/LeavePortal/Login/True");
 driver.manage().window().maximize();
 }
