@@ -67,9 +67,6 @@
                     <version>2.22.0</version>
                     <configuration>
                         <testFailureIgnore>true</testFailureIgnore>
-                        <suiteXmlFiles>
-                            <suiteXmlFile>testng.xml</suiteXmlFile>
-                        </suiteXmlFiles>
                         <systemPropertyVariables>
                             <propertyName>browser</propertyName>
                         </systemPropertyVariables>
