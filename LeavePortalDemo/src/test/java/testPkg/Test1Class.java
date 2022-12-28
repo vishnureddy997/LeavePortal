@@ -24,8 +24,8 @@ WebDriver driver;
 		WebDriverManager.chromedriver().setup();//opening the chrome driver
 
 		driver=new ChromeDriver();
-//System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
-//WebDriver driver = new ChromeDriver();
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
+WebDriver driver = new ChromeDriver();
 driver.get("http://192.168.137.2:7895/LeavePortal/Login/True");
 driver.manage().window().maximize();
 }
