@@ -4,22 +4,6 @@
   <artifactId>LeavePortalDemo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>leaveportal</name>
-    
-    
-     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>7</source>
-                    <target>7</target>
-                </configuration>
-              </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
    <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
