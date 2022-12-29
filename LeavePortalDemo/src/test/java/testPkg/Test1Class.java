@@ -26,24 +26,40 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
+public class Test1Class {
+WebDriver driver;
 
-
-public class Test1Class 
-{
-        @Test
-	public void webDriverManagerChrome()
-	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-			
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		
-		driver.get("https://classic.crmpro.com/index.html");
-         }
+@Test
+public void verifyTitle() {
+//WebDriverManager.chromedriver().setup();
+ChromeOptions options=new ChromeOptions();
+options.addArguments("headless");
+driver=new ChromeDriver(options);
+driver.get("https://www.browserstack.com/");
+System.out.println("Title is: " +driver.getTitle());
+Assert.assertEquals(driver.getTitle(), "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
+driver.quit();
 }
+}
+
+
+
+// public class Test1Class 
+// {
+//         @Test
+// 	public void webDriverManagerChrome()
+// 	{
+// 		WebDriverManager.chromedriver().setup();
+// 		WebDriver driver = new ChromeDriver();
+// 		driver.manage().window().maximize();
+// 		driver.manage().deleteAllCookies();
+			
+// 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+// 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+// 		driver.get("https://classic.crmpro.com/index.html");
+//          }
+// }
 
 //from selenium import webdriver;
 //import chromedriver_autoinstaller;
