@@ -27,6 +27,24 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
+
+public class Test1Class 
+{
+        @Test
+	public void webDriverManagerChrome()
+	{
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+			
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		
+		driver.get("https://classic.crmpro.com/index.html");
+         }
+}
+
 //from selenium import webdriver;
 //import chromedriver_autoinstaller;
 
@@ -45,87 +63,87 @@ import java.util.concurrent.TimeUnit;
 //	}
 //}
 
-public class Test1Class 
+// public class Test1Class 
 
-{ 
+// { 
 
- public WebDriver driver; 
+//  public WebDriver driver; 
 
- public String baseUrl = "http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC";  
-@Test
-	 public void test1() { 
-	//public static void main(String[] args) {
+//  public String baseUrl = "http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC";  
+// @Test
+// 	 public void test1() { 
+// 	//public static void main(String[] args) {
 	
 	
-	//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		// chromedriver_autoinstaller.install();
+// 	//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+// 		// chromedriver_autoinstaller.install();
 
-//Chrome options
-// chrome_options = webdriver.ChromeOptions()
-// chrome_options.add_argument('--no-sandbox')
-// chrome_options.add_argument("--disable-infobars")
-// chrome_options.add_argument('--disable-dev-shm-usage')
+// //Chrome options
+// // chrome_options = webdriver.ChromeOptions()
+// // chrome_options.add_argument('--no-sandbox')
+// // chrome_options.add_argument("--disable-infobars")
+// // chrome_options.add_argument('--disable-dev-shm-usage')
 
-//Run chrome
-//driver = webdriver.Chrome(options=chrome_options);
+// //Run chrome
+// //driver = webdriver.Chrome(options=chrome_options);
 	
 	
-	WebDriverManager.chromedriver().setup();
-	 WebDriver driver = new ChromeDriver();
+// 	WebDriverManager.chromedriver().setup();
+// 	 WebDriver driver = new ChromeDriver();
 
- ChromeOptions options = new ChromeOptions();
+//  ChromeOptions options = new ChromeOptions();
 
- options.addArguments("--no-sandbox");
+//  options.addArguments("--no-sandbox");
 
- options.addArguments("--disable-dev-shm-usage");
+//  options.addArguments("--disable-dev-shm-usage");
 
- options.addArguments("--headless");
+//  options.addArguments("--headless");
 
- driver = new ChromeDriver(options);
+//  driver = new ChromeDriver(options);
 
-System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-//ChromeDriver driver = new ChromeDriver();
+// System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+// //ChromeDriver driver = new ChromeDriver();
 
-  //driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
+//   //driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
 
- driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
+//  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
 
- driver.manage().window().maximize();  
+//  driver.manage().window().maximize();  
 
- driver.get(baseUrl);
+//  driver.get(baseUrl);
 
- driver.close();
+//  driver.close();
 
 
-// public static void main(String[] args) {
+// // public static void main(String[] args) {
 	
 	
-// 	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+// // 	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
        
-//         //create object of chrome options
-//         ChromeOptions options = new ChromeOptions();
+// //         //create object of chrome options
+// //         ChromeOptions options = new ChromeOptions();
         
-//         //add the headless argument
-//         options.addArguments("headless");
+// //         //add the headless argument
+// //         options.addArguments("headless");
         
-//         //pass the options parameter in the Chrome driver declaration
-//         WebDriver driver = new ChromeDriver(options);
+// //         //pass the options parameter in the Chrome driver declaration
+// //         WebDriver driver = new ChromeDriver(options);
         
-//         //Navigate to toolsQA site url
-//         driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
+// //         //Navigate to toolsQA site url
+// //         driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
         
-//         //Print the Title of the Page
-//         //System.out.println("Title of the page is -> " + driver.getTitle());
+// //         //Print the Title of the Page
+// //         //System.out.println("Title of the page is -> " + driver.getTitle());
         
-//         //Close the driver
-//         driver.close();
-    }
-}
+// //         //Close the driver
+// //         driver.close();
+//     }
+// }
 
-	//public void LaunchBrowser() {
-//System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-//WebDriver driver = new ChromeDriver();
-//driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
-//driver.manage().window().maximize();
-//}
-//}
+// 	//public void LaunchBrowser() {
+// //System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+// //WebDriver driver = new ChromeDriver();
+// //driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
+// //driver.manage().window().maximize();
+// //}
+// //}
