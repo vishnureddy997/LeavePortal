@@ -28,7 +28,7 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 
-import chromedriver_autoinstaller
+import chromedriver_autoinstaller;
 
 
 
@@ -60,13 +60,13 @@ public class Test1Class
 	//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 		 chromedriver_autoinstaller.install();
 
-#Chrome options
+//Chrome options
 // chrome_options = webdriver.ChromeOptions()
 // chrome_options.add_argument('--no-sandbox')
 // chrome_options.add_argument("--disable-infobars")
 // chrome_options.add_argument('--disable-dev-shm-usage')
 
-#Run chrome
+//Run chrome
 driver = webdriver.Chrome(options=chrome_options);
 	
 	
