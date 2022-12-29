@@ -68,6 +68,7 @@ public class Test1Class
  options.addArguments("--headless");
 
  driver = new ChromeDriver(options);
+System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 
   //driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
 
