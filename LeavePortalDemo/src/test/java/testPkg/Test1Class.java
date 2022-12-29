@@ -57,6 +57,7 @@ public class Test1Class
 	
 	
 	WebDriverManager.chromedriver().setup();
+	 WebDriver driver = new ChromeDriver();
 
  ChromeOptions options = new ChromeOptions();
 
