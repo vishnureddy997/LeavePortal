@@ -41,7 +41,7 @@ import java.util.concurrent.TimeUnit;
 //	}
 //}
 
-public class AppTest 
+public class Test1Class 
 
 { 
 
