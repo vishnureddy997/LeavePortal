@@ -16,30 +16,55 @@ public class Test1Class
 //	}
 //}
 
-//@Test
+@Test
+	 public void test1() { 
+	
+	
+	WebDriverManager.chromedriver().setup();
 
-public static void main(String[] args) {
+ ChromeOptions options = new ChromeOptions();
+
+ options.addArguments("--no-sandbox");
+
+ options.addArguments("--disable-dev-shm-usage");
+
+ options.addArguments("--headless");
+
+ driver = new ChromeDriver(options);
+
+  driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
+
+ driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);  
+
+ driver.manage().window().maximize();  
+
+ driver.get(baseUrl);
+
+ driver.close();
+
+
+// public static void main(String[] args) {
 	
 	
-	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+// 	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
        
-        //create object of chrome options
-        ChromeOptions options = new ChromeOptions();
+//         //create object of chrome options
+//         ChromeOptions options = new ChromeOptions();
         
-        //add the headless argument
-        options.addArguments("headless");
+//         //add the headless argument
+//         options.addArguments("headless");
         
-        //pass the options parameter in the Chrome driver declaration
-        WebDriver driver = new ChromeDriver(options);
+//         //pass the options parameter in the Chrome driver declaration
+//         WebDriver driver = new ChromeDriver(options);
         
-        //Navigate to toolsQA site url
-        driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
+//         //Navigate to toolsQA site url
+//         driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
         
-        //Print the Title of the Page
-        //System.out.println("Title of the page is -> " + driver.getTitle());
+//         //Print the Title of the Page
+//         //System.out.println("Title of the page is -> " + driver.getTitle());
         
-        //Close the driver
-        driver.close();
+//         //Close the driver
+//         driver.close();
     }
 }
 
