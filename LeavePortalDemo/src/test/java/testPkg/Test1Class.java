@@ -38,8 +38,8 @@ public void startBrowser(String browserName)
 		}
 //public static void main(String[] args)
 
-	//public void LaunchBrowser() {
-//System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
+	public void LaunchBrowser() {
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
 driver.manage().window().maximize();
 driver.get("http://192.168.137.2:7895/LeavePortal/Login/True");
 driver.quit();
