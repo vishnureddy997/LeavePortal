@@ -58,7 +58,7 @@ public class Test1Class
 	
 	
 	//System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-		 chromedriver_autoinstaller.install();
+		// chromedriver_autoinstaller.install();
 
 //Chrome options
 // chrome_options = webdriver.ChromeOptions()
@@ -67,7 +67,7 @@ public class Test1Class
 // chrome_options.add_argument('--disable-dev-shm-usage')
 
 //Run chrome
-driver = webdriver.Chrome(options=chrome_options);
+//driver = webdriver.Chrome(options=chrome_options);
 	
 	
 	WebDriverManager.chromedriver().setup();
@@ -84,7 +84,7 @@ driver = webdriver.Chrome(options=chrome_options);
  driver = new ChromeDriver(options);
 
 System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-ChromeDriver driver = new ChromeDriver();
+//ChromeDriver driver = new ChromeDriver();
 
   //driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
 
