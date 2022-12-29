@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>java.org</groupId>
   <artifactId>LeavePortalDemo</artifactId>
- // <artifactId>web-driver-jenkins-integration</artifactId>
 <version>1.0.0-SNAPSHOT</version>
   <name>leaveportal</name>
   
