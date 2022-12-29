@@ -19,6 +19,9 @@ public class Test1Class
 @Test
 
 //public static void main(String[] args)
+	ChromeOptions options = new ChromeOptions()
+options.addArgument("headless");
+ChromeDriver driver = new ChromeDriver(options);
 
 	public void LaunchBrowser() {
 System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
