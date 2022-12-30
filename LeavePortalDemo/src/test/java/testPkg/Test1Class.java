@@ -1,19 +1,20 @@
-// package testPkg;
+package testPkg;
 
 
-// import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.chrome.ChromeDriver;
-// import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
-// public class Test1Class 
-// { 
-// public static void LaunchBrowser() {
-// System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
-// WebDriver driver = new ChromeDriver();
-// driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
-// driver.manage().window().maximize();
-// }
-// }
+public class Test1Class 
+{ 
+
+public static void main(String[] args) {
+System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
+WebDriver driver = new ChromeDriver();
+driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
+driver.manage().window().maximize();
+}
+}
 
 
 // package testcases;
@@ -103,27 +104,27 @@
 // 		driver.close();
 // 	}
 // }
-package testPkg;
+// package testPkg;
 
 
-import org.openqa.selenium.By;  
-import org.openqa.selenium.JavascriptExecutor;  
-import org.openqa.selenium.WebDriver;  
-import org.openqa.selenium.chrome.ChromeDriver;
-import java.util.concurrent.TimeUnit;  
+// import org.openqa.selenium.By;  
+// import org.openqa.selenium.JavascriptExecutor;  
+// import org.openqa.selenium.WebDriver;  
+// import org.openqa.selenium.chrome.ChromeDriver;
+// import java.util.concurrent.TimeUnit;  
 
-public class Test1Class 
-{ 
-public static void main(String[] args) {
+// public class Test1Class 
+// { 
+// public static void main(String[] args) {
 
-System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
-WebDriver driver = new ChromeDriver();
-driver.get("http://192.168.137.2:7895/LeavePortal/Login/True");
-driver.manage().window().maximize();
+// System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+// WebDriver driver = new ChromeDriver();
+// driver.get("http://192.168.137.2:7895/LeavePortal/Login/True");
+// driver.manage().window().maximize();
 
-// wait time added
- //Thread.sleep(200);
+// // wait time added
+//  //Thread.sleep(200);
 
 
-}
-}
+// }
+// }
