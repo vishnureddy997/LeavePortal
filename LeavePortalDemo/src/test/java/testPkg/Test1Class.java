@@ -12,13 +12,10 @@ public class Test1Class
 public static void main(String[] args) {
 System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chromedriver.exe");
 WebDriver driver = new ChromeDriver();
-driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
-	
-Thread.sleep(1000);	
 	
 driver.manage().window().maximize();
 	
-Thread.sleep(1000);	
+driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");		
 	
 }
 }
