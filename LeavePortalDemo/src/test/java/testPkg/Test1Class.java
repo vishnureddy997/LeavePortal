@@ -14,11 +14,11 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\chro
 WebDriver driver = new ChromeDriver();
 driver.get("http://113.193.29.70:7895/LeavePortal/CreatePassword?randomPassword=$2a$10$iU4hai2Ja/GlhIoc8EyM.egfkBcysjzMq/UideYZ2YlwsRRhsUgiC");
 	
-thread.sleep(100);	
+Thread.sleep(1000);	
 	
 driver.manage().window().maximize();
 	
-thread.sleep(100);	
+Thread.sleep(1000);	
 	
 }
 }
